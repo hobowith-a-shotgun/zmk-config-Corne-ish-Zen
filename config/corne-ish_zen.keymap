@@ -13,7 +13,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        label = "COLESLAW";
+                        label = "MARCIE";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  | BKSP |
 // | CTRL |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |  '   |
@@ -23,7 +23,7 @@
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI    &kp BSPC
    &kp LCTRL &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O       &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH    &kp ESC
-                  &kp LGUI &kp SPACE &mo 1   &mo 2  &kp RET  &kp RALT
+                  &kp LGUI &lt LOWER SPACE &mo 1   &mo 2  &kp RET  &kp RALT
                         >;
                 };
                 lower_layer {
@@ -34,9 +34,9 @@
 // | SHFT | BT1 | BT2 | BT3 | BT4 | BT5 |   |BTCLR|  =  |  .  |  1  |  2  |   3  |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp PSCRN  &kp N1       &kp N2       &kp N3       &kp N4       &kp N5        &kp N6     &kp FSLH  &kp N8  &kp N7    &kp N8 &kp N9
-   &kp DEL    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT     &kp AMPS   &kp MINUS &kp N0  &kp N4    &kp N5 &kp N6
-   &kp LSHFT  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &bt BT_CLR &kp EQUAL &kp DOT &kp N1    &kp N2 &kp N3
+   &kp PSCRN  &kp N1       &kp N2       &kp N3       &kp N4       &kp N5        &kp N6     &kp N7    &kp FSLH  &kp N7  &kp N8 &kp N9
+   &kp DEL    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT     &kp AMPS   &kp MINUS &kp N0    &kp N4  &kp N5 &kp N6
+   &kp LSHFT  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &bt BT_CLR &kp EQUAL &kp DOT   &kp N1  &kp N2 &kp N3
                           	        &kp LGUI     &kp SPACE    &trans        &trans     &kp RET    &kp RALT
                         >;
                 };
