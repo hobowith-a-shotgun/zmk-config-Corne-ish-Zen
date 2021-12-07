@@ -35,12 +35,12 @@
 // | PSCRN|  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  /  |  7  |  8  |   9  |
 // | DEL  |  !  |  @  |  #  |  $  |  %  |   |  &  |  -  |  0  |  4  |  5  |   6  |
 // | SHFT | BT1 | BT2 | BT3 | BT4 | BT5 |   |BTCLR|  =  |  .  |  1  |  2  |   3  |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//                    | GUI |     | SPC |   | BKSP|     | ALT |
                         bindings = <
    &kp PSCRN  &kp N1       &kp N2       &kp N3       &kp N4       &kp N5        &kp N6     &kp N7    &kp FSLH  &kp N7  &kp N8 &kp N9
    &kp DEL    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT     &kp AMPS   &kp MINUS &kp N0    &kp N4  &kp N5 &kp N6
    &kp LSHFT  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &bt BT_CLR &kp EQUAL &kp DOT   &kp N1  &kp N2 &kp N3
-                          	        &kp LGUI     &kp SPACE    &trans        &trans     &kp RET    &kp RALT
+                          	        &kp LGUI     &kp SPACE    &trans        &kp BSPC     &kp RET    &kp RALT
                         >;
                 };
 
