@@ -21,6 +21,8 @@
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
+     };
+
 / {
         keymap {
                 compatible = "zmk,keymap";
