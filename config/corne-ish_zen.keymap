@@ -22,6 +22,43 @@
             bindings = <&mo>, <&kp>;
         };
     };
+    
+    behaviors {
+                hm: homerow_mods {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HOMEROW_MODS";
+                #binding-cells = <2>;
+                tapping-term-ms = <200>;
+                quick_tap_ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+        };
+    };
+
+    combos {
+                compatible = "zmk,combos";
+                combo_esc {
+                        timeout-ms = <75>;
+                        key-positions = <0 1>;
+                        bindings = <&kp ESC>;
+                };
+                combo_bksp {
+                        timeout-ms = <75>;
+                        key-positions = <8 9>;
+                        bindings = <&kp BSPC>;
+                };
+                combo_entr {
+                        timeout-ms = <75>;
+                        key-positions = <28 29>;
+                        bindings = <&kp RET>;
+                };
+                combo_tab {
+                        timeout-ms = <75>;
+                        key-positions = <20 21>;
+                        bindings = <&kp TAB>;
+                };
+        };
+
 };
 
 / {
@@ -36,9 +73,9 @@
 // | SHFT |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | LWR |   | RSE | RET  | ALT |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI    &kp BSPC
-   &kp LCTRL &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O       &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH    &kp ESC
+   &kp TAB   &kp Q       &kp W      &kp F       &kp P       &kp B   &kp J &kp L        &kp U         &kp Y        &kp SEMI    &kp BSPC
+   &kp LCTRL &hm LGUI A  &hm LALT R &hm LCTRL S &hm LSHFT T &kp G   &kp M &hm RSHFT N  &hm RCTRL E   &hm RALT I   &hm RGUI O  &kp SQT
+   &kp LSHFT &kp Z       &kp X      &kp C       &kp D       &kp V   &kp K &kp H        &kp COMMA     &kp DOT      &kp FSLH    &kp ESC
             &kp LGUI &bh 1 SPACE &mo 1   &mo 2 &kp RET &kp RALT
                         >;
                 };
