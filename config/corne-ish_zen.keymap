@@ -43,7 +43,7 @@
                         bindings = <&kp ESC>;
                 };
                 combo_bksp {
-                        timeout-ms = <75>;
+                        timeout-ms = <100>;
                         key-positions = <8 9>;
                         bindings = <&kp BSPC>;
                 };
@@ -74,7 +74,7 @@
 //                    | GUI | LWR | LWR |   | RSE | RET  | ALT |
                         bindings = <
    &kp TAB   &kp Q       &kp W      &kp F       &kp P       &kp B   &kp J &kp L        &kp U         &kp Y        &kp SEMI    &kp BSPC
-   &kp LCTRL &hm LGUI A  &hm LALT R &hm LCTRL S &hm LSHFT T &kp G   &kp M &hm RSHFT N  &hm RCTRL E   &hm RALT I   &hm RGUI O  &kp SQT
+   &kp LCTRL &kp A       &hm LALT R &hm LCTRL S &hm LSHFT T &kp G   &kp M &hm RSHFT N  &hm RCTRL E   &hm RALT I   &kp O       &kp SQT
    &kp LSHFT &kp Z       &kp X      &kp C       &kp D       &kp V   &kp K &kp H        &kp COMMA     &kp DOT      &kp FSLH    &kp ESC
             &kp LGUI &bh 1 SPACE &mo 1   &mo 2 &kp RET &kp RALT
                         >;
